@@ -26,7 +26,7 @@ function App() {
 
   const totalHours = workDays.reduce((acc, day) => acc + day.hours, 0);
   const weeklyGross = totalHours * hourlyRate;
-  const monthlyGross = weeklyGross * 4.5;
+  const monthlyGross = weeklyGross * 4.0;
   const calculatedDiscounts = discountType === 'percentage' 
     ? (monthlyGross * discounts) / 100 
     : discounts;
